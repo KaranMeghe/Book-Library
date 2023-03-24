@@ -11,6 +11,7 @@ const BookCreate = ({ onCreate }) => {
   const handleChange = (e) => {
     setTitle(e.target.value);
   };
+
   return (
     <div className="book-create">
       <h3>Add a Book</h3>
