@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import BookEdit from "./BookEdit";
 
 const BookShow = ({ book, onDelete, onEdit }) => {
@@ -12,14 +12,23 @@ const BookShow = ({ book, onDelete, onEdit }) => {
     onDelete(book.id);
   };
 
-  let content = <h3>{book.title}</h3>;
+  const handleSubmit = (id, newTitle) => {
+    setShowEdit(false);
+    onEdit(id, newTitle);
+  };
+
+  let content = <p>{book.title}</p>;
   if (showEdit) {
-    content = <BookEdit book={book} onEdit={onEdit} />;
+    content = <BookEdit book={book} onSubmit={handleSubmit} />;
   }
 
   return (
     <div className="book-show">
-      <h1>Book Name : {content}</h1>
+      <img
+        alt="books"
+        src={`https://picsum.photos/seed/${book.id}/200/300`}
+      ></img>
+      <h3>{content}</h3>
       <div className="actions">
         <button className="edit" onClick={handleEditClick}>
           edit

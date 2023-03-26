@@ -3,16 +3,6 @@ import { useState } from "react";
 
 function App() {
   const [books, setBooks] = useState([]);
-
-  // const createBook = (title) => {
-  //   const updatedBooks = [
-  //     ...books,
-  //     { id: Math.floor(Math.random() * 999), title },
-  //   ];
-  //   setBooks(updatedBooks);
-  //   console.log(books);
-  // };
-
   const createBook = (title) => {
     if (title.trim() !== "") {
       const updatedBooks = [
@@ -42,7 +32,8 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="app">
+      <h1>Reading List</h1>
       <BookList books={books} onDelete={deleteBookById} onEdit={editBookById} />
       <BookCreate onCreate={createBook} />
     </div>
