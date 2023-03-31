@@ -6,7 +6,7 @@
       "author": "typicode"
     },
     {
-      "title": "Power Rangers Spd",
+      "title": "Power Rangers Spd 2",
       "id": 2
     },
     {
@@ -14,7 +14,7 @@
       "id": 3
     },
     {
-      "title": "Power Rangers Mighty Morphin",
+      "title": "Power Rangers Mighty Morphin 3",
       "id": 5
     },
     {
@@ -76,6 +76,10 @@
     {
       "title": "Spider Man ",
       "id": 20
+    },
+    {
+      "title": "Myth and Legend",
+      "id": 21
     }
   ]
 }
