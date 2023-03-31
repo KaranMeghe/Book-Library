@@ -24,7 +24,16 @@ function App() {
     }
   };
 
-  const deleteBookById = (id) => {
+  // const deleteBookById = (id) => {
+  //   const updatedBooks = books.filter((book) => {
+  //     return book.id !== id;
+  //   });
+  //   setBooks(updatedBooks);
+  // };
+
+  const deleteBookById = async (id) => {
+    const reposnse = await axios.delete(`http://127.0.0.1:3001/books/${id}`);
+
     const updatedBooks = books.filter((book) => {
       return book.id !== id;
     });
