@@ -1,15 +1,6 @@
 {
   "books": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    },
-    {
-      "title": "hero of jamica",
-      "id": 9
-    },
-    {
       "title": "Jamaican hero",
       "id": 11
     },
@@ -36,6 +27,26 @@
     {
       "title": "Myth and Legend",
       "id": 21
+    },
+    {
+      "title": "Macbook Air",
+      "id": 22
+    },
+    {
+      "title": "Rise and shine",
+      "id": 23
+    },
+    {
+      "title": "name",
+      "id": 24
+    },
+    {
+      "title": "add a book",
+      "id": 25
+    },
+    {
+      "title": "smith and robbins",
+      "id": 26
     }
   ]
 }
